@@ -182,7 +182,7 @@
 ## 快速开始
 
 ### 前置要求
-本 Skill 需要在 [Trae](https://trae.ai) 中使用。
+本 Skill 需要在AI工具中使用。
 
 ### 安装
 将 `.trae/skills/human-behavior-os/` 目录复制到你的项目根目录下。
