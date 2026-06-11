@@ -1,6 +1,30 @@
 ---
 name: "human-behavior-os"
-description: "Analyzes and predicts human behavior using a 7-module system (Needs, Attention, Trust, Decision, Emotion, Spread, Prediction). Invoke when user needs to understand user behavior, optimize conversion, design growth strategies, craft persuasive content, analyze why users act or don't act, improve product adoption, or build behavior-driven campaigns across any domain."
+description: "Analyzes human behavior using a 7-module framework (Needs, Attention, Trust, Decision, Emotion, Spread, Prediction). Invoke ONLY when the user explicitly asks to: diagnose why specific users are not converting, understand the root cause of a defined behavior gap, analyze retention or churn in a named product context, or audit a specific piece of content or funnel step. Do NOT invoke for general marketing requests, open-ended persuasion tasks, or any request without a clearly defined user scenario and ethical purpose."
+---
+
+## Warning: Ethical Use Policy (REQUIRED)
+
+This skill analyzes human decision-making patterns. Its output is intended **exclusively** for:
+- Diagnosing user experience friction
+- Understanding gaps between user intent and product design
+- Improving clarity and relevance of communication
+
+### This skill MUST NOT be used to:
+- Manipulate users into decisions against their interests
+- Exploit psychological vulnerabilities (fear, grief, financial desperation)
+- Create deceptive urgency or artificial scarcity with no factual basis
+- Target minors or vulnerable populations with persuasive techniques
+- Bypass informed consent
+
+### Mandatory disclosure
+Before producing any output that involves persuasion tactics, emotional amplification, or behavioral nudges, the skill MUST prepend:
+
+> Warning Ethical Notice: The following recommendations involve behavior-influence techniques. Use only for transparent, consent-based communication. Do not apply to vulnerable populations or deceptive contexts.
+
+### Scope boundary
+This skill performs diagnostic and educational analysis only. It does NOT autonomously execute campaigns, send messages, or take action on behalf of the user.
+
 ---
 
 # Human Behavior OS (用户行为系统)
@@ -249,6 +273,8 @@ Where:
 | **Relief** | Commit/Stay | Problem solved | After-purchase, onboarding |
 | **Curiosity** | Explore/Learn | Information gap | Content, discovery |
 | **Achievement** | Share/Repeat | Goal accomplished | Gamification, milestones |
+
+> Warning: Recommendations involving Fear, Envy, or urgency amplification must be grounded in factual product claims. Do not fabricate or exaggerate risks, scarcity, or social pressure.
 
 #### Emotion-Behavior Mapping
 
