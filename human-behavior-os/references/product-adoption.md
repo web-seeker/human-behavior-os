@@ -1,261 +1,181 @@
 ---
 name: "product-adoption"
-description: "Sub-skill for product adoption, feature activation, and habit formation using Human Behavior OS modules. Covers new product launch, user activation, habit loops, and product-led growth."
+description: "Diagnostic sub-skill for analyzing user adoption patterns, feature usage rates, habit formation signs, and activation barriers. Uses Human Behavior OS modules to diagnose WHY users adopt or abandon products. Outputs behavioral diagnosis ONLY — never provides adoption playbooks, habit engineering tactics, or growth hacking strategies."
 ---
 
-# Product Adoption & Habit Formation
+# Product Adoption Behavior Diagnosis
 
 ## 0. Relationship to Parent
 
-This reference inherits all 7 modules, the Master Formula, and quality standards from the parent Human Behavior OS skill. It adds product-specific frameworks for adoption, activation, and habit formation.
+This reference inherits all 7 diagnostic modules from the parent Human Behavior OS skill. It adds product-specific lenses for **understanding** user adoption and disengagement patterns.
+
+**Scope**: Diagnose WHY users behave as they do with a product. Do NOT provide adoption optimization tactics or habit engineering instructions.
 
 ---
 
-## Product Adoption Framework
+## Diagnostic Framework
 
-### The Adoption Hierarchy
+### The Adoption Lifecycle (Analytical Lens)
 
 ```
-Awareness → Trial → First Value → Habit → Dependence → Advocacy
+Awareness → Trial → First Value → Repeat Use → Habit → Advocacy (or Churn)
 ```
 
-| Stage | Primary Modules | User State | Key Metric |
-|-------|----------------|-----------|------------|
-| Awareness | Attention | "I've heard of it" | Reach, impressions |
-| Trial | Decision | "I'll try it" | Signup rate |
-| First Value | Need + Trust | "It works!" | Activation rate |
-| Habit | Emotion + Need | "I use it regularly" | Retention, DAU/MAU |
-| Dependence | Trust + Need | "I can't live without it" | NPS, engagement depth |
-| Advocacy | Spread | "I tell everyone" | Referral rate, reviews |
+Use this to locate WHERE in the lifecycle behavior changes occur.
+
+| Stage | User State | Diagnostic Focus | Key Behavioral Signal |
+|-------|-----------|-----------------|----------------------|
+| Awareness | "I've heard of it" | Discovery channel effectiveness | Source attribution, reach |
+| Trial | "I'll try it" | Trial trigger & barrier | Signup rate, install rate |
+| First Value | "It works!" | Activation speed & clarity | Time-to-value, activation events |
+| Repeat Use | "I use it again" | Return motivation | D1/D7 return rate |
+| Habit | "I use it regularly" | Usage pattern stability | DAU/MAU ratio, session frequency |
+| Advocacy/Churn | "I tell everyone" OR "I quit" | Loyalty or exit drivers | Referral rate, churn rate, NPS |
 
 ---
 
-## Module-Specific Product Applications
+## Module-Specific Diagnostic Applications
 
-### Need System → Product-Market Fit Diagnosis
+### Need Fit Diagnosis (Module 1)
 
-**Need-Pull vs. Feature-Push:**
+**Product-User Need Alignment Framework:**
 
-| Signal | Need-Pull (Strong Fit) | Feature-Push (Weak Fit) |
-|--------|----------------------|----------------------|
-| Acquisition | Organic, word-of-mouth | Paid, incentivized |
-| Activation | Self-guided, fast | Requires heavy support |
-| Retention | Natural return behavior | Requires reminders |
-| Engagement | Deep feature usage | Surface-level only |
+| Fit Signal | Strong Fit (Healthy Adoption) | Weak Fit (Adoption Struggle) |
+|-----------|------------------------------|----------------------------|
+| Acquisition source | Organic, word-of-mouth | Paid, incentivized |
+| Activation path | Self-guided, fast | Requires heavy support/onboarding |
+| Retention pattern | Natural return behavior | Requires reminders/push notifications |
+| Feature usage depth | Core features actively used | Surface-level browsing only |
+| Churn signal | Low voluntary churn | High churn despite onboarding efforts |
 
-**Need Fit Assessment:**
+#### Need Fit Diagnosis Output
 
 ```markdown
-## Need Fit Score
-1. **Problem Frequency**: How often does this problem occur? (1-10)
-2. **Problem Intensity**: How painful is it? (1-10)
-3. **Current Solutions**: How inadequate are existing solutions? (1-10)
-4. **Willingness to Pay**: How much would users pay to solve this? (1-10)
-5. **Awareness of Problem**: Does the user know they have this problem? (1-10)
-
-Need Fit Score = Average of all 5 dimensions
-- 8-10: Strong product-market fit
-- 5-7: Moderate fit, needs refinement
-- Below 5: Weak fit, reconsider direction
+## Product-User Need Fit Diagnosis
+- **Problem Frequency**: How often does the solved problem occur? (1-10)
+- **Problem Intensity**: How painful is it? (1-10)
+- **Current Alternative Adequacy**: How inadequate are existing solutions? (1-10)
+- **Need Fit Score**: X/10 (average of above)
+- **Fit Classification**: [Strong / Moderate / Weak]
+- **Diagnostic Hypothesis**: [Adoption pattern indicates the product does/does not serve a real user need because...]
 ```
 
-### Attention System → First Impression Design
+### Activation Barrier Diagnosis (Module 4)
 
-**The First 5 Minutes:**
+**Activation Friction Taxonomy:**
 
-| Minute | User Question | Design Answer |
-|--------|--------------|---------------|
-| 0:00-0:30 | "What is this?" | Clear value proposition, no jargon |
-| 0:30-1:00 | "Is this for me?" | Relevance signal, personalization |
-| 1:00-3:00 | "How does it work?" | Guided interaction, progressive disclosure |
-| 3:00-5:00 | "What do I do first?" | Clear first action, low effort |
+| Friction Type | User Experience | Behavioral Signal |
+|--------------|-----------------|-------------------|
+| Cognitive friction | "I don't get it" | Quick exit during onboarding, low feature exploration |
+| Time friction | "This takes too long" | Abandonment during setup, incomplete onboarding |
+| Effort friction | "Too much work" | Partial setup, minimal data input |
+| Social friction | "My team won't use it" | Individual signup but no team adoption |
+| Risk friction | "What if it goes wrong?" | No critical data entered, sandbox-only use |
+| Value friction | "I don't see the point" | Signed up but never reached core feature |
 
-**Attention Retention Techniques:**
-
-| Technique | Implementation |
-|----------|---------------|
-| Progressive disclosure | Show only what's needed at each step |
-| Micro-commitments | Small yes decisions before big ones |
-| Variable rewards | Occasional surprises, Easter eggs |
-| Endowed progress | "You're already 30% done!" |
-| Scarcity signals | Limited features, beta access |
-
-### Trust System → Product Credibility
-
-**Product Trust Building:**
-
-| Stage | Trust Signal | Implementation |
-|-------|-------------|----------------|
-| Before use | Authority + Social proof | Expert endorsements, user count, media mentions |
-| First use | Competence | Smooth onboarding, no bugs, fast performance |
-| Early use | Reliability | Consistent performance, data safety |
-| Extended use | Value delivery | Measurable ROI, progress tracking |
-| Long-term | Partnership | Continuous improvement, responsive support |
-
-### Decision System → Activation Decision
-
-**The Activation Decision Equation:**
-
-```
-Activation = (Perceived Value × Ease of Start) - (Learning Cost × Switching Cost × Risk)
-```
-
-**Activation Friction Audit:**
-
-| Friction Type | Question | Reduction Strategy |
-|--------------|----------|-------------------|
-| Cognitive | "I don't understand how to use this" | Guided tutorial, templates, examples |
-| Time | "This takes too long to set up" | Quick start, pre-configured options |
-| Effort | "This is too much work" | Automate, integrate, simplify |
-| Social | "What if my team doesn't adopt it?" | Collaborative features, import tools |
-| Risk | "What if I make a mistake?" | Undo, version history, sandbox mode |
-| Financial | "What if it's not worth the money?" | Free tier, trial, money-back guarantee |
-
-### Emotion System → Habit Formation
-
-**The Habit Loop:**
-
-```
-Cue → Craving → Response → Reward
-```
-
-| Component | Product Implementation | Example |
-|-----------|----------------------|---------|
-| Cue | Trigger notification, time-based, event-based | "It's Monday morning — plan your week" |
-| Craving | Anticipation of reward | "See your progress score" |
-| Response | The core action | Complete the weekly plan |
-| Reward | Variable reward + satisfaction | Achievement badge + progress visualization |
-
-**Habit Strength Indicators:**
-
-| Signal | Habit Strength | Action |
-|--------|---------------|--------|
-| Daily active usage | Strong | Maintain, deepen |
-| Weekly usage | Moderate | Increase frequency cues |
-| Monthly usage | Weak | Re-evaluate value proposition |
-| Declining usage | Breaking | Diagnose and intervene |
-
-**Emotional Design for Habit:**
-
-| Emotion | When to Trigger | Product Feature |
-|---------|---------------|----------------|
-| Anticipation | Before use | Notifications, reminders, streaks |
-| Achievement | During use | Progress bars, levels, milestones |
-| Satisfaction | After use | Completion screens, summaries, rewards |
-| Curiosity | Between uses | "What's new", "Discover", "Try this" |
-| Belonging | Throughout | Community, social features, comparisons |
-
-### Spread System → Product-Led Growth
-
-**PLG Viral Mechanics:**
-
-| Mechanism | How It Works | Viral Coefficient |
-|-----------|-------------|------------------|
-| Collaboration invite | "Invite your team to collaborate" | 0.3-0.8 |
-| Content sharing | User-generated content shared publicly | 0.1-0.5 |
-| Embedded presence | "Powered by [Product]" in user content | 0.05-0.2 |
-| Network effects | Product gets better with more users | 0.2-1.0+ |
-| Referral program | Explicit incentive to invite | 0.2-0.5 |
-
-### Prediction System → Adoption Forecasting
-
-**Adoption Prediction Model:**
-
-```
-Adoption Probability = (Need Intensity × Value Clarity × Ease of Adoption) - (Switching Cost × Learning Curve × Risk Perception)
-```
-
-**Key Predictive Signals:**
-
-| Signal | Predicts | Lead Time | Intervention |
-|--------|----------|-----------|-------------|
-| Feature exploration depth | Activation likelihood | First session | Guide to core feature |
-| Return within 48 hours | Habit formation potential | 2 days | Nurture sequence |
-| Team invitation sent | Expansion signal | First week | Team onboarding flow |
-| Integration connections | Commitment level | First month | Value reinforcement |
-| Usage pattern shift | Churn risk | 2-4 weeks | Re-engagement |
-
----
-
-## Common Product Scenarios
-
-### Scenario 1: New Product Launch
-
-**Pre-Launch Checklist:**
-- [ ] Need fit validated (interviews, surveys, data)
-- [ ] First value moment defined and achievable in < 5 minutes
-- [ ] Onboarding flow designed with friction audit
-- [ ] Trust signals prepared (testimonials, case studies, data)
-- [ ] Habit triggers identified and implemented
-- [ ] Sharing/viral mechanism designed
-
-### Scenario 2: Feature Adoption
-
-**Feature Adoption Diagnosis:**
-1. Is the feature solving a real need? (Need System)
-2. Do users know the feature exists? (Attention System)
-3. Is it easy to try? (Decision System)
-4. Does it deliver value quickly? (Trust System)
-5. Is there a habit trigger? (Emotion System)
-
-### Scenario 3: Habit Formation
-
-**Habit Formation Strategy:**
-1. Identify the natural cue (when does the user need this?)
-2. Make the response effortless (reduce all friction)
-3. Design a satisfying reward (variable + predictable)
-4. Add investment (user puts something in that makes leaving hard)
-5. Track and reinforce (streaks, milestones, social proof)
-
----
-
-## Output Template: Product Adoption Profile
+#### Activation Diagnosis
 
 ```markdown
-# Product Adoption Profile
-
-## 1. Need Fit Assessment
-[Need System — Need Fit Score with breakdown]
-
-## 2. First Impression Design
-[Attention System — First 5 minutes design]
-
-## 3. Activation Analysis
+## Activation Barrier Diagnosis
 - **Current Activation Rate**: X%
-- **Time to Value**: X minutes
-- **Activation Friction Score**: X/10
-- **#1 Friction Point**: [Specific blocker]
-- **Recommended Fix**: [Specific intervention]
+- **Time to First Value**: X minutes (or never achieved)
+- **Primary Drop-off Step**: [Where users quit during activation]
+- **Friction Classification**: [From taxonomy above]
+- **Root Cause Hypothesis**: [Users fail to activate because...]
+```
 
-## 4. Trust Building Plan
-[Trust System — Trust signals by adoption stage]
+### Usage Pattern Diagnosis (Modules 5, 7)
 
-## 5. Habit Formation Design
-[Emotion System — Habit loop with triggers and rewards]
+**Usage Behavior Classification:**
 
-## 6. Growth Mechanics
-[Spread System — Viral/PLG mechanism design]
+| Pattern | Behavioral Signals | Diagnostic Meaning |
+|---------|-------------------|-------------------|
+| Power user | Daily use, deep feature exploration, high session count | Strong need fit, high value delivery |
+| Regular user | Consistent but shallow use, same few features | Moderate fit, core value delivered |
+| Declining user | Decreasing login frequency, fewer features used | Value decay or competing alternative |
+| Dormant user | No login in 14+ days, no close actions | Churn imminent or already occurred |
+| New user | < 7 days since signup, still exploring | Too early to classify; monitor trajectory |
 
-## 7. Adoption Prediction
-[Prediction System — Forecast with key signals]
+#### Usage Trajectory Diagnosis
 
-## 8. Recommendations
-### Immediate (This Sprint)
-- [ ] [Action]
+```markdown
+## Usage Pattern Diagnosis
+- **Current User Segment Distribution**: [Power / Regular / Declining / Dormant % split]
+- **Trajectory Trend**: [Improving / Stable / Declining] (over last 30 days)
+- **Key Transition Point**: [Where users typically shift between segments]
+- **Predicted 30-Day State**: [Based on current trajectory]
+- **Diagnostic Hypothesis**: [Usage pattern indicates...]
+```
 
-### Short-term (This Month)
-- [ ] [Action]
+### Trust-in-Product Diagnosis (Module 3)
 
-### Strategic (This Quarter)
-- [ ] [Action]
+**Product Trust Lifecycle Stages:**
 
-## 9. Key Metrics
-| Metric | Current | Target | Priority |
-|--------|---------|--------|----------|
-| Need Fit Score | X/10 | 8+/10 | Critical |
-| Activation Rate | X% | Y% | Critical |
-| D7 Retention | X% | Y% | High |
-| D30 Retention | X% | Y% | High |
-| Habit Formation Rate | X% | Y% | High |
-| Viral Coefficient | X.X | Y.Y | Medium |
+| Stage | Trust Focus | Trust Failure Signal |
+|-------|------------|--------------------|
+| Pre-use | Brand/product credibility | Low signup conversion despite awareness |
+| First use | Competence (does it work?) | Bugs, errors, confusion during onboarding |
+| Early use | Reliability (consistent?) | Intermittent issues, inconsistency reports |
+| Extended use | Value delivery (worth it?) | Usage decline despite no major issues |
+| Long-term | Partnership (invested?) | Churn to competitor despite satisfaction |
+
+#### Trust Diagnosis
+
+```markdown
+## Product Trust Diagnosis
+- **Trust Stage of User Base**: [Where most users are in trust lifecycle]
+- **Trust Failure Point**: [If applicable — where trust erodes]
+- **Failure Classification**: [Competence / Reliability / Value / Partnership]
+- **Diagnostic Hypothesis**: [User trust dynamic indicates...]
+```
+
+### Churn Signal Diagnosis (Module 7)
+
+**Pre-Churn Behavioral Indicators:**
+
+| Signal | Lead Time | Diagnostic Confidence |
+|--------|-----------|---------------------|
+| Login frequency drop >50% | 2-4 weeks | High |
+| Core feature usage stops | 1-3 weeks | High |
+| Session length declining | 1-3 weeks | Medium-High |
+| Support ticket spike (complaints) | 1-2 weeks | High |
+| No key action in 7 days | 1-2 weeks | Medium |
+| Competitor search (if detectable) | Days | Very High |
+
+#### Churn Risk Diagnosis
+
+```markdown
+## Churn Risk Diagnosis
+- **At-Risk User Segment**: [Which users show pre-churn signals]
+- **Dominant Churn Signal**: [Most prevalent indicator]
+- **Churn Driver Hypothesis**: [Why are these users likely to churn?]
+- **Predicted Churn Rate**: X% (over next 30 days, with confidence level)
+```
+
+---
+
+## Complete Output: Product Adoption Diagnosis Report
+
+```markdown
+# Product Adoption Diagnosis Report
+
+## Summary
+[One-paragraph diagnosis of the core adoption/engagement issue]
+
+## Findings by Module
+1. **Need Fit**: [Does the product serve a real user need?]
+2. **Activation Barriers**: [What prevents users from reaching value?]
+3. **Usage Patterns**: [How do engaged vs. disengaged users behave differently?]
+4. **Trust Dynamics**: [Where does product trust exist or break down?]
+5. **Churn Risk**: [Who is likely to leave and why?]
+
+## Primary Root Cause Hypothesis
+[Single most likely explanation for the observed adoption pattern]
+
+## Suggested Investigation Paths
+- Path A: [User interview question or data point to validate]
+- Path B: [Cohort analysis or experiment to run]
+
+## Key Metrics to Observe
+[Metrics that will confirm or refute this diagnosis over time]
 ```

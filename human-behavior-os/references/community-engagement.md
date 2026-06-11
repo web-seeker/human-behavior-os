@@ -1,285 +1,179 @@
 ---
 name: "community-engagement"
-description: "Sub-skill for community building, user engagement, and group behavior using Human Behavior OS modules. Covers community design, engagement loops, social dynamics, and moderation."
+description: "Diagnostic sub-skill for analyzing community participation patterns, group dynamics, member motivation, and community health indicators. Uses Human Behavior OS modules to diagnose WHY community members behave as they do. Outputs behavioral diagnosis ONLY — never provides engagement playbooks, growth hacking tactics, moderation strategies, or community design blueprints."
 ---
 
-# Community Engagement & Group Behavior
+# Community Participation Behavior Diagnosis
 
 ## 0. Relationship to Parent
 
-This reference inherits all 7 modules, the Master Formula, and quality standards from the parent Human Behavior OS skill. It adds community-specific frameworks, social dynamics, and engagement patterns.
+This reference inherits all 7 diagnostic modules from the parent Human Behavior OS skill. It adds community-specific lenses for **understanding** group behavior and participation patterns.
+
+**Scope**: Diagnose WHY community members behave as they do. Do NOT provide community building tactics, engagement manipulation, or growth recipes.
 
 ---
 
-## Community Behavior Framework
+## Diagnostic Framework
 
-### The Community Engagement Lifecycle
+### The Community Participation Lifecycle (Analytical Lens)
 
 ```
-Discover → Join → Participate → Contribute → Lead → Advocate
+Discover → Join → Participate → Contribute → Lead → Advocate (or Leave)
 ```
 
-| Stage | Primary Modules | User State | Success Metric |
-|-------|----------------|-----------|----------------|
-| Discover | Attention | "I found this place" | Traffic, impressions |
-| Join | Decision + Trust | "I'll create an account" | Signup rate |
-| Participate | Emotion + Need | "I'm engaging with content" | Active rate, posts per user |
-| Contribute | Identity + Trust | "I'm creating value" | Content creation rate |
-| Lead | Identity + Spread | "I'm shaping this community" | Leader identification |
-| Advocate | Spread + Emotion | "I'm bringing others here" | Referral rate |
+| Stage | Member State | Diagnostic Focus | Key Signal |
+|-------|-------------|-----------------|------------|
+| Discover | "I found this place" | Discovery channel effectiveness | Traffic source, impressions |
+| Join | "I'll create an account" | Join decision drivers | Signup conversion rate |
+| Participate | "I'm engaging" | Participation motivation | Posts, comments, reactions per user |
+| Contribute | "I'm creating value" | Contribution drivers | Content creation rate, quality |
+| Lead | "I'm shaping things" | Leadership emergence | Organizer, moderator, mentor behavior |
+| Advocate | "I bring others" | Referral motivation | Invite rate, external sharing |
+| Leave | "I'm done here" | Departure reasons | Churn, inactivity, exit feedback |
 
 ---
 
-## Module-Specific Community Applications
+## Module-Specific Diagnostic Applications
 
-### Need System → Community Member Needs
+### Member Need Diagnosis (Module 1)
 
-**Why People Join Communities:**
+**Community Need Layer Reference:**
 
-| Need Layer | Community Expression | Member Type | Example Communities |
+| Need Layer | Community Expression | Member Type | Behavioral Signal |
 |-----------|---------------------|-------------|-------------------|
-| L1 Survival | Safety net, mutual aid, crisis support | Vulnerable members | Support groups, neighborhood watch |
-| L2 Efficiency | Knowledge sharing, tool recommendations, tips | Practitioners | Professional forums, Stack Overflow |
-| L3 Emotion | Belonging, companionship, shared experience | Social seekers | Hobby groups, fan communities |
-| L4 Identity | Professional reputation, expertise display | Experts | Industry associations, advisory boards |
-| L5 Growth | Learning, mentorship, career advancement | Ambitious members | Mastermind groups, alumni networks |
+| L1 Survival | Safety, mutual aid, crisis support | Vulnerable member | Seeks help, support posts |
+| L2 Efficiency | Knowledge sharing, tool tips | Practitioner | Q&A, resource sharing |
+| L3 Emotion | Belonging, companionship | Social seeker | Casual chat, off-topic posts |
+| L4 Identity | Reputation, expertise display | Expert | Thought leadership, long-form answers |
+| L5 Growth | Learning, mentorship, advancement | Ambitious member | Mentorship, organized learning |
 
-**Community Value Proposition:**
-
-```
-Members join for [Need Layer reason].
-Members stay for [Emotional connection].
-Members contribute for [Identity recognition].
-Members advocate for [Belonging reinforcement].
-```
-
-### Attention System → Community Engagement Hooks
-
-**Engagement Triggers in Communities:**
-
-| Trigger | Community Application | Example |
-|---------|---------------------|---------|
-| Curiosity | "What do you think about...?" | Discussion prompts, polls |
-| Conflict | "Unpopular opinion: ..." | Debate threads, hot takes |
-| Benefit | "Free resource inside" | Exclusive content, tools |
-| Story | "How I went from X to Y" | Member spotlights, AMAs |
-| Novelty | "New feature/announcement" | Product updates, community news |
-| Danger | "Warning: don't make this mistake" | Cautionary tales, lessons learned |
-| Result | "Here's what I achieved" | Win celebrations, case studies |
-| Secret | "Insider tip: ..." | Exclusive knowledge, behind-the-scenes |
-| Contrast | "Most people think X, but actually Y" | Myth-busting, paradigm shifts |
-
-**Engagement Cadence:**
-
-| Frequency | Content Type | Purpose |
-|-----------|-------------|---------|
-| Daily | Quick prompts, questions, tips | Maintain engagement |
-| Weekly | Deeper discussions, events, challenges | Build habit |
-| Monthly | Major events, milestones, celebrations | Create belonging |
-| Quarterly | Reviews, evolution, community direction | Reinforce identity |
-
-### Trust System → Community Trust Dynamics
-
-**Community Trust Levels:**
-
-| Level | Trust Type | Behavior | How to Build |
-|-------|-----------|----------|--------------|
-| L1 Surface | Platform trust | "This site is safe" | Clear rules, moderation, privacy |
-| L2 Social | Member trust | "These people are real" | Verified profiles, real names, activity |
-| L3 Content | Information trust | "This info is reliable" | Expert members, sourced content, fact-checking |
-| L4 Relational | Personal trust | "I can be vulnerable here" | Supportive culture, no trolling, confidentiality |
-| L5 Identity | Community trust | "This is my tribe" | Shared values, rituals, traditions |
-
-**Trust Destruction Events:**
-
-| Event | Impact | Recovery |
-|-------|--------|----------|
-| Spam/intrusion | High | Swift moderation, transparent communication |
-| Data breach | Very High | Immediate disclosure, remediation plan |
-| Toxic behavior tolerated | High | Clear policy enforcement, apology |
-| Leadership failure | Very High | Accountability, community-led recovery |
-| Misinformation spread | Medium-High | Correction, source verification system |
-
-### Decision System → Participation Decision
-
-```
-Participate Decision = (Social Reward + Information Value + Identity Gain) - (Effort + Risk + Time)
-```
-
-**Participation Friction Points:**
-
-| Friction | Why It Blocks | Solution |
-|----------|--------------|----------|
-| Lurker fear | "What if I say something stupid?" | Anonymous posting option, "no wrong answers" framing |
-| Effort barrier | "Too much work to contribute" | Low-effort participation (reactions, polls, quick replies) |
-| Relevance uncertainty | "Is this the right place for this?" | Clear categories, posting guidelines, examples |
-| Social risk | "What will people think of me?" | Positive reinforcement culture, no-downvote norms |
-| Expertise intimidation | "Everyone here knows more than me" | Beginner-friendly spaces, "ask anything" threads |
-
-**Progressive Participation Design:**
-
-```
-Level 1: React (like, emoji, vote) — Zero friction
-Level 2: Respond (comment, reply) — Low friction
-Level 3: Create (post, share) — Medium friction
-Level 4: Lead (organize, mentor) — High friction, high reward
-```
-
-### Emotion System → Community Emotional Dynamics
-
-**Community Emotional Contagion:**
-
-| Emotion | Spread Pattern | Community Impact | Management |
-|---------|---------------|-----------------|------------|
-| Excitement | Fast, broad | High engagement, positive energy | Amplify, channel |
-| Anger | Fast, can spiral | Toxicity risk, conflict | Contain, moderate |
-| Fear | Fast, narrow | In-group/out-group formation | Address, reassure |
-| Joy | Moderate, sustained | Loyalty, belonging | Celebrate, ritualize |
-| Sadness | Slow, deep | Empathy, bonding | Support, safe space |
-| Frustration | Moderate, can escalate | Churn risk, criticism | Listen, act |
-
-**Community Rituals (Emotional Anchors):**
-
-| Ritual Type | Frequency | Emotional Function | Example |
-|------------|-----------|-------------------|---------|
-| Welcome ritual | Per new member | Belonging, acceptance | Personalized welcome message |
-| Achievement ritual | Per milestone | Pride, recognition | "Member of the month", badges |
-| Celebration ritual | Per community event | Joy, unity | Anniversaries, milestones |
-| Support ritual | When needed | Safety, trust | "Help desk" hours, mentorship |
-| Transition ritual | Per role change | Identity, growth | Moderator promotion, graduation |
-
-### Spread System → Community Growth Mechanics
-
-**Community Growth Loops:**
-
-| Loop Type | Mechanism | Viral Coefficient |
-|-----------|-----------|------------------|
-| Content sharing | Members share community content externally | 0.1-0.3 |
-| Invitation incentive | "Invite friends for exclusive access" | 0.2-0.5 |
-| Public value | Community content is publicly searchable | 0.1-0.4 |
-| Event-driven | Events bring in new members | 0.05-0.2 |
-| Identity signal | "I'm part of [Community]" visible externally | 0.05-0.15 |
-
-**Growth Without Dilution:**
-
-| Risk | Cause | Prevention |
-|------|-------|-----------|
-| Culture dilution | Too many new members too fast | Gradual onboarding, culture education |
-| Quality decline | Lower engagement standards | Clear norms, moderation, example-setting |
-| Fragmentation | Subgroups form and disconnect | Cross-group events, shared rituals |
-| Gatekeeping | Old members exclude new members | Inclusive norms, mentorship programs |
-
-### Prediction System → Community Health Forecasting
-
-**Community Health Indicators:**
-
-| Signal | Health Status | Lead Time | Intervention |
-|--------|--------------|-----------|-------------|
-| Active member ratio rising | Growing | Ongoing | Support growth, maintain culture |
-| New member retention dropping | Declining health | 2-4 weeks | Improve onboarding, engagement hooks |
-| Top contributors leaving | At risk | 1-2 weeks | Personal outreach, recognition |
-| Toxicity reports increasing | Culture erosion | 1-3 weeks | Reinforce norms, increase moderation |
-| Content quality declining | Value erosion | 2-4 weeks | Content guidelines, expert spotlights |
-| Response time increasing | Engagement cooling | 1-2 weeks | Re-engage, create events |
-
-**Community Health Score:**
-
-```
-Health Score = (Active Ratio × 0.3) + (New Member Retention × 0.2) + (Content Quality × 0.2) + (Sentiment Score × 0.15) + (Growth Rate × 0.15)
-```
-
----
-
-## Common Community Scenarios
-
-### Scenario 1: Cold Start (New Community)
-
-**Phase 1: Seed (0-100 members)**
-- Focus: Quality over quantity
-- Recruit 10-20 highly engaged founding members
-- Create initial high-quality content (10x the standard)
-- Establish culture and norms through example
-
-**Phase 2: Grow (100-1,000 members)**
-- Focus: Engagement depth
-- Introduce participation levels
-- Create rituals and traditions
-- Begin member-led content and events
-
-**Phase 3: Scale (1,000+ members)**
-- Focus: Culture preservation + growth
-- Implement subgroups/channels
-- Develop moderation team from active members
-- Systematize onboarding
-
-### Scenario 2: Reviving a Stale Community
-
-**Diagnosis:**
-1. Check: Is the core need still relevant?
-2. Identify: When did engagement start declining?
-3. Find: Who are the remaining active members?
-4. Analyze: What changed (product, platform, competition)?
-
-**Interventions:**
-- Re-engage core members personally
-- Create a "relaunch" event with exclusive content
-- Introduce new engagement formats (challenges, AMAs)
-- Refresh the community purpose and value proposition
-
-### Scenario 3: Managing Toxicity
-
-**Response Framework:**
-1. **Immediate**: Remove toxic content, warn or ban violators
-2. **Transparent**: Communicate action to community
-3. **Preventive**: Review and strengthen community guidelines
-4. **Cultural**: Reinforce positive norms through recognition
-5. **Systemic**: Improve moderation tools and processes
-
----
-
-## Output Template: Community Behavior Profile
+#### Member Need Diagnosis Output
 
 ```markdown
-# Community Behavior Profile
+## Community Member Need Diagnosis
+- **Predominant Need Layer(s)**: [From member behavior observation]
+- **Need-Community Fit**: [Does the community serve these needs?]
+- **Unmet Need Signals**: [Behaviors indicating unsatisfied needs]
+- **Diagnostic Hypothesis**: [Members join/participate/leave because...]
+```
 
-## 1. Member Need Map
-[Need System — Why members join and stay]
+### Participation Friction Diagnosis (Module 4)
 
-## 2. Engagement Hook Library
-[Attention System — Triggers and cadence]
+**Participation Barrier Taxonomy:**
 
-## 3. Trust Dynamics Map
-[Trust System — Trust levels and building plan]
+| Barrier Type | Member Experience | Behavioral Signal |
+|--------------|------------------|-------------------|
+| Lurker friction | "I have nothing valuable to say" | Views but no reactions/comments |
+| Social risk | "What if I look foolish?" | Anonymous views only, no identity |
+| Effort friction | "Too much work to contribute" | Reactions only, no text contributions |
+| Relevance friction | "This isn't for me" | Selective engagement, partial-topic only |
+| Expertise friction | "Everyone knows more than me" | Reads but never asks/questions |
+| Culture friction | "I don't fit in here" | Short membership, early exit |
 
-## 4. Participation Decision Model
-[Decision System — Friction analysis and progressive participation]
+#### Participation Diagnosis
 
-## 5. Community Emotional Design
-[Emotion System — Rituals, emotional contagion management]
+```markdown
+## Participation Friction Diagnosis
+- **Active Member Ratio**: X% (members who posted/commented in last 30 days)
+- **Lurker Ratio**: X% (viewed but never engaged)
+- **Primary Barrier**: [From taxonomy above]
+- **Barrier Distribution**: [% per barrier type from available signals]
+- **Hypothesis**: [Non-participation occurs because...]
+```
 
-## 6. Growth Mechanics
-[Spread System — Growth loops and culture preservation]
+### Trust Dynamics Diagnosis (Module 3)
 
-## 7. Health Prediction
-[Prediction System — Health score and risk indicators]
+**Community Trust Level Reference:**
 
-## 8. Recommendations
-### Culture & Engagement
-- [ ] [Action]
+| Trust Level | What It Means | Breakdown Signal |
+|-------------|--------------|-----------------|
+| L1 Platform | "This site is safe to use" | Security concerns, privacy complaints |
+| L2 Social | "These are real people" | Bot/spam concerns, authenticity doubts |
+| L3 Content | "Information here is reliable" | Misinformation spread, fact disputes |
+| L4 Relational | "I can be vulnerable here" | Toxicity reports, harassment incidents |
+| L5 Identity | "This is my tribe" | Low belonging indicators, weak identity signals |
 
-### Growth & Scale
-- [ ] [Action]
+#### Trust Diagnosis
 
-### Moderation & Safety
-- [ ] [Action]
+```markdown
+## Community Trust Diagnosis
+- **Current Trust Level**: [L1-L5 for the community overall]
+- **Trust-Breakdown Event(s)**: [If applicable — what damaged trust]
+- **Recovery Status**: [Recovering / Stable / Ongoing erosion]
+- **Hypothesis**: [Community trust dynamics indicate...]
+```
 
-## 9. Key Metrics
-| Metric | Current | Target | Priority |
-|--------|---------|--------|----------|
-| Active Member Ratio | X% | Y% | Critical |
-| New Member Retention (D30) | X% | Y% | High |
-| Content Quality Score | X/10 | Y/10 | High |
-| Sentiment Score | X/10 | Y/10 | High |
-| Growth Rate | X%/mo | Y%/mo | Medium |
-| Toxicity Report Rate | X/1K | Y/1K | Critical |
+### Group Emotion Diagnosis (Module 5)
+
+**Community Emotional Climate Classification:**
+
+| Climate | Behavioral Signals | Diagnostic Meaning |
+|---------|-------------------|-------------------|
+| Positive/Thriving | Celebrations, mutual support, warm interactions | Healthy emotional foundation |
+| Neutral/Functional | Task-focused, polite but distant | Functional but low belonging |
+| Tense/Polarized | Debates, factions, us-vs-them dynamics | Conflict risk, potential toxicity |
+| Toxic/Deteriorating | Harassment, pile-ons, exodus | Culture failure, urgent intervention needed |
+| Apathetic/Stale | Minimal interaction, ghost town | Relevance or energy crisis |
+
+#### Emotion Climate Diagnosis
+
+```markdown
+## Community Emotional Climate Diagnosis
+- **Current Climate**: [From classification above]
+- **Sentiment Trend**: [Improving / Stable / Declining over 30 days]
+- **Key Emotion Drivers**: [What events/content shaped current climate]
+- **Hypothesis**: [Community emotional state reflects...]
+```
+
+### Community Health Forecast (Module 7)
+
+**Health Indicator Dashboard:**
+
+| Indicator | Healthy Range | Warning Signal | Critical Signal |
+|-----------|--------------|---------------|----------------|
+| Active member ratio | > 20% of total | 10-20% | < 10% |
+| New member retention (D30) | > 40% | 20-40% | < 20% |
+| Content creation rate | Steady or growing | Declining | Sharp drop |
+| Sentiment score | > 7/10 | 5-7 | < 5 |
+| Top contributor activity | Stable or growing | Declining | Left or inactive |
+| Toxicity report rate | < 1/1000 posts | 1-5/1000 | > 5/1000 |
+| Response time | < 24hr avg | 24-72hr | > 72hr |
+
+#### Health Forecast Diagnosis
+
+```markdown
+## Community Health Forecast
+- **Current Health Score**: X/10 (from indicator dashboard)
+- **Trend Direction**: [Improving / Stable / Declining]
+- **At-Risk Indicators**: [Which metrics are in warning/critical range]
+- **Prediction**: [30-day community state forecast with confidence]
+- **Key Assumptions**: [What this forecast depends on]
+```
+
+---
+
+## Complete Output: Community Behavior Diagnosis Report
+
+```markdown
+# Community Behavior Diagnosis Report
+
+## Summary
+[One-paragraph diagnosis of the core community health issue]
+
+## Findings by Module
+1. **Member Needs**: [What brings members and keeps them?]
+2. **Participation Barriers**: [What prevents deeper engagement?]
+3. **Trust Dynamics**: [What is the community's trust level?]
+4. **Emotional Climate**: [What is the group's emotional state?]
+5. **Health Forecast**: [What is the predicted community trajectory?]
+
+## Primary Root Cause Hypothesis
+[Single most likely explanation for observed community behavior patterns]
+
+## Suggested Investigation Paths
+- Path A: [Survey question or metric to investigate further]
+- Path B: [Experiment or cohort analysis to validate]
+
+## Key Metrics to Track
+[Metrics that will confirm or refine this diagnosis over time]
 ```

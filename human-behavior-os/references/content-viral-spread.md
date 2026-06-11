@@ -1,224 +1,186 @@
 ---
 name: "content-viral-spread"
-description: "Sub-skill for content viral mechanics and social media engagement using Human Behavior OS modules. Covers content strategy, viral triggers, sharing optimization, and audience growth."
+description: "Diagnostic sub-skill for analyzing why specific content did or didn't spread. Uses Human Behavior OS modules to diagnose sharing patterns, attention capture effectiveness, and engagement drivers in existing content. Outputs behavioral diagnosis ONLY — never creates viral content strategies, share optimization tactics, or growth hacking instructions."
 ---
 
-# Content Viral & Spread Optimization
+# Content Spread Pattern Diagnosis
 
 ## 0. Relationship to Parent
 
-This reference inherits all 7 modules, the Master Formula, and quality standards from the parent Human Behavior OS skill. It adds content-specific frameworks, viral mechanics, and audience behavior patterns.
+This reference inherits all 7 diagnostic modules from the parent Human Behavior OS skill. It adds content-specific lenses for **understanding** why content spreads or fails to spread.
+
+**Scope**: Diagnose WHY content behaved as it did. Do NOT provide viral content recipes or growth tactics.
 
 ---
 
-## Content Viral Framework
+## Diagnostic Framework
 
-### The Viral Content Formula
+### The Spread Equation (Analytical Lens)
 
 ```
-Virality = (Emotional Intensity × Identity Relevance × Share Friction⁻¹) × Audience Size
+Spread Potential = (Emotional Intensity × Identity Relevance) ÷ Sharing Friction
 ```
 
-Content goes viral when ALL three factors align:
-1. **High emotional intensity** — The content makes people FEEL something strongly
-2. **Identity relevance** — Sharing this content says something about WHO the sharer is
-3. **Low sharing friction** — It's effortless to share
+Use this equation to **explain** an observed spread outcome — not to engineer one.
+
+| Dimension | Diagnostic Question | Data Sources |
+|-----------|---------------------|-------------|
+| Emotional Intensity | How strongly did content make people feel? | Comments, reactions, sentiment |
+| Identity Relevance | Does sharing this say something about the sharer? | Share demographics, profile types |
+| Sharing Friction | How easy or hard was it to share? | Share button clicks, platform distribution |
 
 ---
 
-## Module-Specific Content Applications
+## Module-Specific Diagnostic Applications
 
-### Attention System → Content Hook Design
+### Attention Capture Diagnosis (Module 2)
 
-**The 3-Second Rule:**
+**Hook Mechanism Classifier:**
 
-You have 3 seconds to capture attention. Design hooks by trigger type:
+Use this to identify what attention mechanism existing content used:
 
-| Trigger | Hook Formula | Example |
-|---------|-------------|---------|
-| Curiosity | "Why [unexpected thing] happens" | "Why the best programmers don't use IDEs" |
-| Contrast | "[Expected thing] is actually [opposite]" | "The most productive people work less" |
-| Danger | "You're probably [doing wrong thing]" | "You've been brushing your teeth wrong" |
-| Result | "How [specific outcome] in [timeframe]" | "How we grew from 0 to 100K in 30 days" |
-| Story | "[Person] was [situation]. Then [event]." | "She was $50K in debt. Then she tried this." |
-| Secret | "[Authority] doesn't want you to know [thing]" | "Google doesn't want you to know this search trick" |
-| Novelty | "For the first time, [new thing]" | "AI can now write better than most humans" |
-| Conflict | "[Popular opinion] is wrong" | "Networking is a waste of time. Here's why." |
-| Benefit | "Get [specific result] with [simple method]" | "Double your reading speed in 5 minutes" |
+| Hook Type | Content Pattern | Diagnostic Question |
+|-----------|----------------|---------------------|
+| Curiosity | Information gap created | Did curiosity drive initial engagement? |
+| Contrast | Unexpected juxtaposition | Did surprise break through noise? |
+| Danger/Risk | Warning or threat frame | Did fear/alarm drive attention? |
+| Benefit | Clear gain promised | Was the value proposition immediate? |
+| Social Proof | Others' validation shown | Did social signals boost credibility? |
+| Story | Narrative arc present | Did narrative sustain attention? |
+| Novelty | Newness emphasized | Did uniqueness drive initial interest? |
+| Conflict | Opposing forces presented | Did controversy drive engagement? |
 
-**Hook Structure Template:**
-
-```
-[Trigger Type]: [Bold Claim] + [Specific Detail] + [Implied Promise]
-```
-
-### Emotion System → Content Emotional Engineering
-
-**Virality by Emotion:**
-
-| Emotion | Viral Potential | Content Type | Share Motive |
-|---------|----------------|-------------|-------------|
-| Awe | Very High | Achievement, nature, innovation | Self-expression |
-| Anger | Very High | Injustice, hypocrisy, controversy | Identity building |
-| Joy | High | Humor, heartwarming, celebration | Emotional release |
-| Fear | High | Warning, risk, danger | Helping others |
-| Surprise | High | Unexpected twist, revelation | Social currency |
-| Sadness | Medium | Storytelling, empathy | Self-expression |
-| Anticipation | Medium | Upcoming reveal, tease | Social validation |
-
-**Emotional Arc for Maximum Engagement:**
-
-```
-Hook (Curiosity/Surprise) → Build (Tension/Anticipation) → Climax (Awe/Joy) → Resolution (Relief/Satisfaction)
-```
-
-**The "Emotional Whiplash" Technique:**
-Start with one emotion, deliver an unexpected twist that shifts to a contrasting emotion.
-Example: Start with frustration → reveal solution → end with inspiration.
-
-### Spread System → Content Sharing Mechanics
-
-**Share Motive Optimization:**
-
-| Share Motive | Content Strategy | Amplifier |
-|-------------|-----------------|-----------|
-| Self-expression | Opinion pieces, values, humor | "Which side are you on?" framing |
-| Helping others | Tips, tutorials, warnings | "Save this for later" CTA |
-| Social validation | Achievements, milestones | "Tag someone who needs this" |
-| Identity building | Expertise, taste, insider info | "Only real [group] know this" |
-| Emotional release | Funny, outrageous, heartwarming | Relatable situations |
-| Social currency | Exclusive, early, insider | "Before this goes mainstream" |
-
-**Sharing Friction Elimination Checklist:**
-
-- [ ] Share buttons visible and accessible (not buried)
-- [ ] Pre-written share text with placeholder for personalization
-- [ ] One-click share to major platforms
-- [ ] Mobile-optimized sharing flow
-- [ ] Visual assets designed for each platform's optimal format
-- [ ] Shareable quote/image within the content
-
-### Need System → Audience Need Mapping
-
-**Content Need Layers:**
-
-| Layer | Content That Satisfies | Format |
-|-------|----------------------|--------|
-| L1 Survival | How-to survive, crisis info, money-saving | Guides, lists, tools |
-| L2 Efficiency | Productivity hacks, shortcuts, automation | Tutorials, comparisons |
-| L3 Emotion | Entertainment, memes, stories, community | Videos, memes, posts |
-| L4 Identity | Expertise, taste, professional insight | Thought leadership, reviews |
-| L5 Growth | Learning, self-improvement, mastery | Courses, deep dives, books |
-
-**Audience Need Discovery Questions:**
-1. What is this audience trying to achieve?
-2. What are they afraid of?
-3. What do they want to be known for?
-4. What frustrates them daily?
-5. What do they talk about with peers?
-
-### Trust System → Content Credibility
-
-**Building Trust Through Content:**
-
-| Trust Source | Content Implementation |
-|-------------|----------------------|
-| Facts | Data visualization, sourced statistics, research citations |
-| Evidence | Screenshots, demos, before/after, case studies |
-| Authority | Expert quotes, credentials, institutional backing |
-| Social Proof | User testimonials, engagement metrics, community size |
-| Consistency | Publishing schedule, series, recognizable format |
-| Experience | Interactive demos, free tools, calculators |
-
-### Decision System → Content Engagement Decision
-
-```
-Engage Decision = (Content Value + Entertainment Value) - (Time Cost + Attention Cost + Cognitive Effort)
-```
-
-**Engagement Optimization:**
-
-| Friction | Solution |
-|----------|----------|
-| Too long | TL;DR summary, scannable headers, key takeaways |
-| Too complex | Jargon-free language, analogies, visual aids |
-| Too slow | Start with payoff, front-load value, progressive disclosure |
-| Too generic | Specific examples, personal stories, data points |
-
-### Prediction System → Content Performance Forecasting
-
-**Content Performance Indicators:**
-
-| Signal | Predicts | Action |
-|--------|----------|--------|
-| High early engagement (first hour) | Viral potential | Boost distribution |
-| Low click-through on hook | Weak attention trigger | A/B test hooks |
-| High save/bookmark rate | Evergreen potential | Create series |
-| High comment sentiment | Community building | Engage in comments |
-| Low completion rate | Content too long/dense | Edit or split |
-
----
-
-## Content Format Optimization
-
-### Platform-Specific Behavior Adaptation
-
-| Platform | Primary Behavior | Optimal Content | Attention Window |
-|----------|-----------------|----------------|-----------------|
-| Twitter/X | Quick consume, quick share | Hot takes, threads, visuals | 1-3 seconds |
-| Instagram | Visual-first, aspirational | Stories, reels, carousels | 1-2 seconds |
-| TikTok | Entertainment-first, discovery | Short video, trends, humor | 0.5-1 second |
-| LinkedIn | Professional identity, networking | Insights, stories, expertise | 3-5 seconds |
-| YouTube | Deep engagement, learning | Tutorials, stories, series | 5-10 seconds |
-| Newsletter | Intentional reading, relationship | Insights, curation, exclusives | Subject line: 1-2 seconds |
-| Blog/Article | Search-driven, deep learning | Guides, comparisons, how-tos | Title: 2-3 seconds |
-
----
-
-## Output Template: Content Viral Profile
+#### Attention Diagnosis Output
 
 ```markdown
-# Content Viral Profile
+## Content Attention Diagnosis
+- **Hook Mechanism Used**: [Classified from actual content]
+- **Initial Engagement Signal**: [Views, impressions, click-through rate]
+- **Hook-Effectiveness Assessment**: [Did this hook work for this audience?]
+- **Diagnosis**: [Attention was captured/lost because...]
+```
 
-## 1. Audience Need Map
-[Need System output for target audience]
+### Emotion-Spread Link Diagnosis (Module 5)
 
-## 2. Attention Hook Design
-[Attention System output with 3 hook options]
+> ⚠️ **Guardrail**: This classifies emotions observed in content and their correlation to sharing behavior. It does NOT recommend emotional engineering or amplification.
 
-## 3. Emotional Engineering Plan
-[Emotion System output with emotional arc]
+**Emotion-Spread Correlation Table:**
 
-## 4. Trust & Credibility Strategy
-[Trust System output for content authority]
+| Dominant Emotion in Content | Typical Spread Pattern | Diagnostic Use |
+|----------------------------|----------------------|---------------|
+| Awe/Wonder | High share, high save | Classify awe-driven virality |
+| Anger/Outrage | High share, mixed sentiment | Classify outrage-driven spread |
+| Joy/Humor | Medium-high share, positive sentiment | Classify humor-driven spread |
+| Fear/Warning | Medium share, "helping others" motive | Classify alert-driven spread |
+| Sadness/Empathy | Lower share, high engagement depth | Classify empathy-driven engagement |
+| Surprise | High share, curiosity-driven | Classify surprise-driven virality |
 
-## 5. Sharing Mechanics Design
-[Spread System output with share triggers]
+#### Emotion-Spread Diagnosis
 
-## 6. Content Performance Prediction
-[Prediction System output]
+```markdown
+## Emotion-Spread Analysis
+- **Dominant Emotion in Content**: [Classified from content + reaction data]
+- **Observed Spread Pattern**: [Actual sharing/engagement data]
+- **Emotion-Spread Correlation**: [Does the emotion explain the spread pattern?]
+- **Proportionality Check**: [Was emotional intensity proportionate to content substance?]
+- **Diagnosis**: [Content spread/failed to spread because...]
+```
 
-## 7. Content Recommendations
-### Headline Options (ranked by predicted CTR)
-1. [Option A] — Predicted CTR: X%
-2. [Option B] — Predicted CTR: X%
-3. [Option C] — Predicted CTR: X%
+### Sharing Motive Diagnosis (Module 6)
 
-### Format & Platform Strategy
-- Primary Platform: [Platform] — [Why]
-- Content Format: [Format] — [Why]
-- Optimal Length: [Duration/Word count]
+**Sharing Motive Classifier:**
 
-### Distribution Plan
-- [Channel 1]: [Strategy]
-- [Channel 2]: [Strategy]
+Use this to deduce WHY people shared (or didn't share) a piece of content:
 
-## 8. Key Metrics
-| Metric | Target | Measurement |
-|--------|--------|-------------|
-| View/Read Rate | X% | Platform analytics |
-| Engagement Rate | X% | Likes + comments / views |
-| Share Rate | X% | Shares / views |
-| Save Rate | X% | Saves / views |
-| Viral Coefficient (K) | X.X | Shares × new viewers / total viewers |
+| Motive | Behavioral Signal in Data | When This Motive Is Active |
+|--------|--------------------------|--------------------------|
+| Self-expression | Shares with commentary/opinion | Opinion pieces, values content |
+| Helping others | Saves, "send to friend", bookmarks | Tips, guides, warnings |
+| Identity signaling | Shares to professional networks | Expertise, insight content |
+| Emotional release | Reactive shares, emotional captions | Strong emotion content |
+| Social currency | Early shares, "first" comments | Exclusive, breaking content |
+| Social validation | Shares seeking likes/confirmation | Achievement, milestone content |
+
+#### Sharing Diagnosis
+
+```markdown
+## Sharing Motive Analysis
+- **Active Sharing Motive(s)**: [Deduced from share behavior data]
+- **Motive-Content Fit**: [Did content actually serve this motive well?]
+- **Non-Sharer Barrier**: [For those who saw but didn't share — why not?]
+- **Diagnosis**: [Sharing behavior indicates...]
+```
+
+### Audience Need Diagnosis (Module 1)
+
+**Content-Audience Need Alignment:**
+
+| Need Layer | Content That Serves It | Misalignment Signal |
+|-----------|----------------------|---------------------|
+| L1 Survival | Crisis info, how-to survive, money-saving | Low save rate, quick bounce if mismatched |
+| L2 Efficiency | Productivity tips, shortcuts, tools | Low bookmark rate if content is entertainment-only |
+| L3 Emotion | Entertainment, stories, community | Low comment depth if content is purely informational |
+| L4 Identity | Expertise, taste, professional insight | Low LinkedIn/share-to-network if content lacks depth |
+| L5 Growth | Learning, self-improvement, mastery | Low long-term engagement if content is shallow |
+
+#### Need Alignment Diagnosis
+
+```markdown
+## Content-Audience Need Alignment
+- **Target Audience Need Profile**: [Inferred from audience data]
+- **Content's Need Address**: [What need the content serves]
+- **Alignment Gap**: [Mismatch between audience needs and content offering]
+- **Diagnosis**: [Engagement pattern reflects this need alignment/misalignment because...]
+```
+
+### Platform-Behavior Diagnosis (Module 2 + 7)
+
+**Platform Behavior Reference:**
+
+| Platform | Typical Attention Window | Expected Behavior Pattern |
+|----------|-------------------------|--------------------------|
+| Twitter/X | 1-3 seconds | Quick consume, quick react or move on |
+| Instagram | 1-2 seconds | Visual-first decision, save or scroll |
+| TikTok | 0.5-1 second | Entertainment filter, instant stay/go |
+| LinkedIn | 3-5 seconds | Professional relevance check, engage or skip |
+| YouTube | 5-10 seconds | Topic relevance assessment, watch or leave |
+| Newsletter | Subject line: 1-2 seconds | Sender/value judgment, open or delete |
+
+#### Platform-Fit Diagnosis
+
+```markdown
+## Platform Fit Analysis
+- **Platform**: [Where content was published]
+- **Platform-Native Behavior**: [Expected behavior on this platform]
+- **Content Adaptation Level**: [Well-adapted / partially adapted / misaligned]
+- **Performance-vs-Platform Norm**: [Above/below average for this platform?]
+- **Diagnosis**: [Content performed as it did on this platform because...]
+```
+
+---
+
+## Complete Output: Content Spread Diagnosis Report
+
+```markdown
+# Content Spread Diagnosis Report
+
+## Summary
+[One-paragraph diagnosis of why content spread or failed to spread]
+
+## Findings
+1. **Attention Analysis**: [Hook effectiveness, platform fit]
+2. **Emotion Analysis**: [Dominant emotion, spread correlation]
+3. **Need Alignment**: [Content-audience need match]
+4. **Sharing Motive**: [Why people shared or didn't]
+5. **Friction Analysis**: [Barriers to sharing/engagement]
+
+## Primary Root Cause Hypothesis
+[Single most likely explanation for the observed spread pattern]
+
+## Suggested Investigation Paths
+- Path A: [A/B test or data point to validate]
+- Path B: [Alternative angle to investigate]
+
+## Key Metrics to Track
+[Metrics that will confirm or refine this diagnosis]
 ```

@@ -1,217 +1,180 @@
 ---
 name: "ecommerce-conversion"
-description: "Sub-skill for e-commerce conversion optimization using Human Behavior OS modules. Covers purchase behavior, cart abandonment, pricing psychology, and checkout optimization."
+description: "Diagnostic sub-skill for analyzing e-commerce purchase behavior, cart abandonment patterns, pricing perception, and checkout friction. Uses Human Behavior OS modules to diagnose WHY shoppers do or don't complete purchases. Outputs behavioral diagnosis ONLY — never provides conversion optimization tactics, pricing strategies, or sales interventions."
 ---
 
-# E-Commerce Conversion Optimization
+# E-Commerce Purchase Behavior Diagnosis
 
 ## 0. Relationship to Parent
 
-This reference inherits all 7 modules, the Master Formula, and quality standards from the parent Human Behavior OS skill. It adds e-commerce-specific frameworks, metrics, and intervention patterns.
+This reference inherits all 7 diagnostic modules from the parent Human Behavior OS skill. It adds e-commerce-specific lenses for **understanding** shopper behavior patterns.
+
+**Scope**: Diagnose WHY purchase behavior occurs or doesn't occur. Do NOT provide optimization playbooks.
 
 ---
 
-## E-Commerce Behavior Framework
+## Diagnostic Framework
 
-### The E-Commerce Decision Journey
+### The Purchase Journey (Analytical Lens)
 
 ```
-Awareness → Interest → Search → Compare → Decide → Purchase → Post-Purchase
+Awareness → Consideration → Comparison → Decision → Purchase → Post-Purchase
 ```
 
-Each stage maps to specific modules:
+Use each stage to locate WHERE in the journey behavior breaks down.
 
-| Stage | Primary Modules | Key Question |
-|-------|----------------|-------------|
-| Awareness | Attention, Need | How do they find us? |
-| Interest | Attention, Emotion | Why do they stay? |
-| Search | Need, Trust | What are they looking for? |
-| Compare | Decision, Trust | Why choose us? |
-| Decide | Decision, Emotion | Why buy now? |
-| Purchase | Decision, Trust | Why complete the transaction? |
-| Post-Purchase | Spread, Prediction | Will they return? Refer? |
+| Stage | Diagnostic Focus | Key Question |
+|-------|-----------------|--------------|
+| Awareness | How did shoppers discover the product? | Source effectiveness |
+| Consideration | What need is driving interest? | Need layer identification |
+| Comparison | How do they evaluate against alternatives? | Decision factor mapping |
+| Decision | What prevents/enables the purchase decision? | Friction vs. driver analysis |
+| Purchase | What happens at transaction completion? | Final-barrier diagnosis |
+| Post-Purchase | What determines return/referral? | Satisfaction vs. expectation gap |
 
 ---
 
-## Module-Specific E-Commerce Applications
+## Module-Specific Diagnostic Applications
 
-### Need System → Purchase Motivation Map
+### Purchase Need Diagnosis (Module 1)
 
-**E-Commerce Need Layers:**
+**E-Commerce Need Layer Reference:**
 
-| Layer | E-Commerce Expression | Common Products |
-|-------|----------------------|-----------------|
-| L1 Survival | Essential goods, emergency supplies | Food, medicine, repairs |
-| L2 Efficiency | Time-saving, cost-saving solutions | Tools, services, bundles |
-| L3 Emotion | Mood-enhancing, gift-giving | Fashion, entertainment, gifts |
-| L4 Identity | Status symbols, taste signals | Luxury, niche, artisanal |
-| L5 Growth | Self-improvement tools | Courses, books, equipment |
+| Need Layer | Shopper Behavior Signal | Product Category Example |
+|-----------|------------------------|------------------------|
+| L1 Survival | Emergency/essential buying | Medicine, repairs, staples |
+| L2 Efficiency | Deal-seeking, comparison shopping | Tools, bundles, subscriptions |
+| L3 Emotion | Impulse, gift, mood-driven | Fashion, entertainment, gifts |
+| L4 Identity | Status/luxury purchasing | Premium brands, niche items |
+| L5 Growth | Investment/self-improvement buying | Courses, equipment, books |
 
-**Analysis Template:**
+#### Need Diagnosis Output
 
 ```markdown
-## Purchase Motivation Map
-- **Product Category Need Layer**: [L1-L5]
-- **Buyer's Primary Need**: [Specific need within layer]
-- **Purchase Trigger Event**: [What event precipitates the need]
-- **Urgency Level**: [1-10] — [Why]
-- **Comparison Set**: [What else they're considering]
+## Purchase Need Diagnosis
+- **Active Need Layer(s)**: [From observed shopper behavior]
+- **Purchase Trigger Event**: [What precipitated the shopping session]
+- **Need-Urgency Level**: X/10 — [Evidence]
+- **Need-Product Fit**: [Does the product actually serve this need?]
 ```
 
-### Trust System → E-Commerce Trust Stack
+### Checkout Friction Diagnosis (Module 4)
 
-**Trust Signals by Purchase Stage:**
+**Friction Point Taxonomy for E-Commerce:**
 
-| Stage | Trust Signals | Implementation |
-|-------|--------------|----------------|
-| Landing | Reviews, ratings, media mentions | Star ratings, "As seen in", user count |
-| Product Page | Detailed photos, specs, Q&A | 360° images, size guides, FAQ |
-| Checkout | Security badges, payment options | SSL, trusted payment logos |
-| Post-Purchase | Easy returns, responsive support | Return policy, live chat |
+| Friction Type | Where It Occurs | Behavioral Signal |
+|--------------|-----------------|-------------------|
+| Price friction | Product page / cart | Abandonment after price reveal |
+| Trust friction | Payment page | Drop-off at payment method selection |
+| Effort friction | Checkout form | Abandonment mid-form (long forms) |
+| Option friction | Product selection | Cart abandonment with many variants |
+| Delivery friction | Shipping info stage | Exit when shipping cost/time shown |
+| Security friction | Payment stage | Exit at credit card entry |
 
-**Cart Abandonment Trust Analysis:**
-
-Common trust failures that cause abandonment:
-1. **Price surprise** — Hidden fees at checkout
-2. **Security concern** — Unfamiliar payment process
-3. **Return anxiety** — Unclear return policy
-4. **Delivery uncertainty** — No clear shipping info
-5. **Product doubt** — Not enough information to decide
-
-### Decision System → Purchase Decision Equation
-
-```
-Buy Decision = (Product Value + Urgency + Trust) - (Price + Risk + Effort + Delay)
-```
-
-**Pricing Psychology Interventions:**
-
-| Technique | Mechanism | Best For |
-|----------|-----------|----------|
-| Anchoring | Show high price first, then discount | Premium products |
-| Decoy effect | Add a third option to make target look best | Plan comparisons |
-| Bundle pricing | Package items to obscure individual prices | Multi-product |
-| Pay-over-time | Reduce perceived upfront cost | High-ticket items |
-| Flash urgency | Time-limited offer | Impulse purchases |
-| Social proof pricing | "X people bought today" | Popular products |
-
-### Emotion System → Purchase Emotions
-
-**Pre-Purchase Emotional Sequence:**
-
-```
-Desire (want the outcome) → Anxiety (fear of wrong choice) → Excitement (anticipation) → Satisfaction (post-purchase)
-```
-
-**Emotional Intervention Points:**
-
-| Emotion | Intervention | Where |
-|---------|-------------|-------|
-| Desire | Benefit-focused imagery, lifestyle copy | Product page hero |
-| Anxiety | Money-back guarantee, reviews, comparisons | Below fold |
-| Excitement | Countdown, limited stock, fast delivery promise | Near CTA |
-| Satisfaction | Order confirmation, unboxing preview | Thank you page |
-
-### Spread System → E-Commerce Viral Mechanics
-
-**E-Commerce Sharing Triggers:**
-
-| Trigger | Implementation | Expected K |
-|---------|---------------|-----------|
-| Deal sharing | "Share for $10 off" referral | 0.3-0.5 |
-| Unboxing experience | Beautiful packaging, Instagram-worthy | 0.1-0.3 |
-| Status purchase | "Just bought" social notification | 0.05-0.15 |
-| Gift purchase | Gift wrapping + personal message | 0.1-0.2 |
-| Review incentive | Discount on next purchase for review | 0.2-0.4 |
-
-### Prediction System → E-Commerce Behavior Forecasting
-
-**Key Predictive Signals:**
-
-| Signal | Predicts | Lead Time | Intervention |
-|--------|----------|-----------|-------------|
-| Cart value > average | High intent | Immediate | Offer upsell |
-| 2+ visits to same product | Consideration | 1-3 days | Retarget with social proof |
-| Price comparison tool used | Decision phase | Hours | Price match or value add |
-| Abandoned cart | Intent but friction | Minutes | Recovery email sequence |
-| Repeat purchase pattern | Loyalty forming | Weeks | Subscription offer |
-
----
-
-## Common E-Commerce Scenarios
-
-### Scenario 1: Cart Abandonment
-
-**Quick Diagnosis:**
-1. Check abandonment rate by step (cart → checkout → payment)
-2. Identify the highest-dropoff step
-3. Map to trust/decision/emotion failure
-
-**Intervention Framework:**
-- **Cart page**: Add trust signals, save for later, wishlist
-- **Checkout**: Reduce fields, guest checkout, progress indicator
-- **Payment**: Multiple options, security badges, price transparency
-- **Post-abandonment**: Email sequence (1hr → 24hr → 72hr)
-
-### Scenario 2: Low Conversion Rate
-
-**Diagnosis Checklist:**
-- [ ] Is the value proposition clear in 5 seconds?
-- [ ] Are trust signals visible above the fold?
-- [ ] Is the CTA prominent and action-oriented?
-- [ ] Is the price justified relative to perceived value?
-- [ ] Is the path from interest to purchase ≤ 3 clicks?
-
-### Scenario 3: Low Average Order Value
-
-**AOV Optimization:**
-- Cross-sell: "Frequently bought together"
-- Upsell: "Upgrade to premium"
-- Bundle: "Complete the set"
-- Threshold: "Free shipping on $50+"
-- anchoring: Show per-unit price for bulk
-
----
-
-## Output Template: E-Commerce Behavior Profile
+#### Cart Abandonment Root Cause Framework
 
 ```markdown
-# E-Commerce Behavior Profile
+## Cart Abandonment Diagnosis
+- **Abandonment Rate**: X%
+- **Drop-off Stage**: [Identify the specific step with highest exit]
+- **Friction Classification**: [From taxonomy above]
+- **Root Cause Hypothesis**: [Shoppers abandoned because...]
+- **Supporting Evidence**: [Available data points]
+- **Confidence Level**: [High/Medium/Low — based on data availability]
+```
 
-## 1. Purchase Motivation Map
-[Need System output]
+### Pricing Perception Diagnosis (Module 4)
 
-## 2. Trust Stack Analysis
-[Trust System output with e-commerce signals]
+**Price Value Gap Analysis:**
 
-## 3. Conversion Funnel Diagnosis
-[Decision System output mapped to funnel stages]
+Use this framework to **assess** how shoppers perceive price relative to value — NOT to design pricing strategies.
 
-## 4. Emotional Journey Map
-[Emotion System output for purchase sequence]
+| Perception Pattern | Shopper Behavior Signal | Diagnostic Interpretation |
+|-------------------|------------------------|-------------------------|
+| Price exceeds perceived value | High cart abandonment, price complaints | Value communication failure |
+| Price aligns with value | Steady conversion, low price objections | Good value perception |
+| Price below expected value | Very high conversion, possible margin loss | Underpricing signal |
+| Price confusion | Questions about what's included | Clarity/communication issue |
 
-## 5. Viral Potential Assessment
-[Spread System output for e-commerce]
+#### Pricing Perception Diagnosis
 
-## 6. Purchase Prediction Model
-[Prediction System output for buying behavior]
+```markdown
+## Pricing Perception Analysis
+- **Price Point**: $X
+- **Perceived Value Estimate**: $Y (from shopper behavior signals)
+- **Value Gap**: [Positive = good deal perception; Negative = overpriced perception]
+- **Competitor Reference**: [How does this compare to alternatives in shopper's mind?]
+- **Diagnosis**: [Shoppers perceive this product as underpriced/fair/overpriced because...]
+```
 
-## 7. Optimization Recommendations
-### Quick Wins (This Week)
-- [ ] [Specific action with expected impact]
+### Trust Breakdown Diagnosis (Module 3)
 
-### Medium-Term (This Month)
-- [ ] [Specific action with expected impact]
+**E-Commerce Trust Failure Points:**
 
-### Strategic (This Quarter)
-- [ ] [Specific action with expected impact]
+| Failure Point | Shopper Signal | Common Cause |
+|--------------|---------------|-------------|
+| Pre-purchase trust | Low click-through, high bounce | No social proof, unfamiliar brand |
+| Product-page trust | Short dwell time, no scroll | Poor images, sparse description |
+| Cart trust | Add-to-cart but no checkout | Hidden costs feared, return anxiety |
+| Payment trust | Exit at payment method | Security concerns, unfamiliar processor |
+| Post-purchase trust | Returns, negative reviews | Product didn't match expectations |
 
-## 8. Key Metrics
-| Metric | Current | Target | Priority |
-|--------|---------|--------|----------|
-| Conversion Rate | X% | Y% | High |
-| AOV | $X | $Y | Medium |
-| Cart Abandonment | X% | Y% | High |
-| Repeat Purchase Rate | X% | Y% | Medium |
-| Referral Rate | X% | Y% | Low |
+#### Trust Diagnosis
+
+```markdown
+## E-Commerce Trust Diagnosis
+- **Trust-Breakdown Stage**: [Where confidence was lost]
+- **Failure Type**: [From table above]
+- **Shopper Concern Identified**: [What specifically worried them]
+- **Diagnosis**: [Trust broke down because...]
+```
+
+### Post-Purchase Behavior Diagnosis (Modules 5, 6, 7)
+
+**Post-Purchase Outcome Spectrum:**
+
+| Outcome | Behavior Signal | Diagnostic Implication |
+|---------|----------------|----------------------|
+| Satisfaction | Repeat purchase, positive review | Expectation met or exceeded |
+| Neutral | No further action | Expectation met but no delight |
+| Disappointment | Return, complaint, no repeat | Expectation gap (product < promise) |
+| Advocacy | Referral, share, public praise | Expectation exceeded significantly |
+| Regret | Return, negative review | Significant expectation gap |
+
+#### Post-Purchase Diagnosis
+
+```markdown
+## Post-Purchase Behavior Diagnosis
+- **Outcome Classification**: [From observed post-purchase data]
+- **Expectation Alignment**: [Did product meet pre-purchase expectations?]
+- **Gap Source**: [If gap exists: marketing promise vs. product reality vs. delivery experience]
+- **Diagnostic Hypothesis**: [Post-purchase behavior indicates...]
+```
+
+---
+
+## Complete Output: E-Commerce Behavior Diagnosis Report
+
+```markdown
+# E-Commerce Behavior Diagnosis Report
+
+## Summary
+[One-paragraph diagnosis of the core behavioral issue]
+
+## Findings by Module
+1. **Needs**: [What need drives/isn't driving purchase intent]
+2. **Trust**: [Where trust exists/breaks down in the funnel]
+3. **Decision Barriers**: [Primary frictions preventing purchase]
+4. **Emotions**: [Pre-purchase emotional state and its effect]
+5. **Post-Purchase**: [Satisfaction/return/referral pattern]
+
+## Primary Root Cause Hypothesis
+[Single most likely explanation for the observed behavior pattern]
+
+## Suggested Investigation Paths
+- Path A: [Data point or A/B test to validate hypothesis]
+- Path B: [Alternative hypothesis to investigate]
+
+## Key Metrics to Observe
+[Metrics that will confirm or refute this diagnosis over time]
 ```
